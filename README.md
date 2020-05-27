@@ -1,4 +1,4 @@
-![NixOS Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FNixOS%2Fnixos-artwork%2Fissues%2F16&psig=AOvVaw0BNax0ujYt8FUtoR4mGOVW&ust=1590666425887000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODJ4rD80-kCFQAAAAAdAAAAABAJ)
+![NixOS Logo](https://camo.githubusercontent.com/e18a77abf36b84656ddaa1e79fed706c9d3e8cfd/68747470733a2f2f6e69786f732e6f72672f6c6f676f2f6e69786f732d68697265732e706e67)
 
 To run my NixOS config, execute the following:
 
