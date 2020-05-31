@@ -52,6 +52,7 @@ in {
     networkmanager
     networkmanagerapplet
     openscad
+    pandoc
     p7zip
     polybar
     python36Packages.binwalk-full
@@ -108,6 +109,7 @@ in {
     ripgrep
     rclone-browser
     rclone
+    riot-desktop
     sbsigntool
     tinc
     tinc_pre
