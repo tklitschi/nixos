@@ -11,7 +11,7 @@ To run my NixOS config, execute the following:
 > 
 > sudo ln -sr /etc/nixos/machines/$MACHINE/configuration.nix /etc/nixos/configuration.nix
 
-##TODO:
+## TODO:
 
     - [ ] change commands and links to varibales
     - [ ] insert https://github.com/tklitschi/nixdot to NixOS Config
