@@ -9,7 +9,7 @@ To run my NixOS config, execute the following:
 > 
 > sudo cp /etc/nixos.bak/hardware-configuration.nix /etc/nixos/$machine/hardware.nix
 > 
-> sudo ln -sr /etc/nixos/machines/$MACHINE/configuration.nix /etc/nixos/configuration.nix
+> sudo ln -sr /etc/nixos/machines/$MACHINE/default.nix /etc/nixos/configuration.nix
 
 ## TODO:
 
