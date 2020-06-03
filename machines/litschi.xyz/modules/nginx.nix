@@ -6,6 +6,11 @@
     "litschi.xyz" = {
       email = "t.kratz@posteo.de";
     };
+    "matrix.litschi.xyz" = {
+      group = "matrix-synapse";
+      allowKeysForGroup = true;
+      postRun = "systemctl reload nginx.service; systemctl restart matrix-synapse.service";
+    };
   };
 
   services.nginx = {
@@ -57,43 +62,26 @@
 	forceSSL = true;
         enableACME = true;
         #root = "/var/lib/litschi.xyz";
-#basicAuth = {
-#	  litschi = "letmein";
-#	};
         locations."/" = {
           proxyPass = "http://localhost:3000";
 	  proxyWebsockets = true;
         };
       };
       
-      "blog.litschi.xyz" = {
-	forceSSL = true;
+      "matrix.litschi.xyz" = {
+        forceSSL = true;
+        enableACME = true;
+        locations."/" = {
+          proxyPass = "http://127.0.0.1:8008";
+        };
+      }; 
+     
+     "litschi.xyz" = {
+	      addSSL = true;
         enableACME = true;
         #root = "/var/lib/litschi.xyz";
         
         locations."/" = {
-          proxyPass = "http://78.47.10.102/blog";
-	  proxyWebsockets = true;
-        };
-        locations."/blog" = {
-          proxyPass = "http://78.47.10.102/blog";
-	  proxyWebsockets = true;
-        };
-      };
-
-
-      "litschi.xyz" = {
-	addSSL = true;
-        enableACME = true;
-        #root = "/var/lib/litschi.xyz";
-        
-        locations."/" = {
-          proxyPass = "http://78.47.10.102/blog";
-	  proxyWebsockets = true;
-        };
-        locations."/blog" = {
-          proxyPass = "http://78.47.10.102/blog";
-	  proxyWebsockets = true;
         };
       };
     };
