@@ -44,6 +44,7 @@ You can find the config files for e.g. i3 in my nixdot rep (https://github.com/t
 │   │   ├── default.nix
 │   │   ├── hardware.nix
 │   │   └── modules
+│   │       ├── matr.nix \\ Matrix Server config
 │   │       ├── monitoring.nix \\ grafana, prometheus & prometheus node exporter
 │   │       ├── nginx.nix \\ nginx config
 │   │       ├── pkgs.nix \\ dedicated packages list for Server
@@ -67,6 +68,7 @@ You can find the config files for e.g. i3 in my nixdot rep (https://github.com/t
 │   ├── tmux.nix \\ tmux config
 │   ├── yubikey.nix \\ Yubikey Config
 │   └── zsh.nix \\ Z-Shell config
+├── nix-secret \\ Submodule to secret repo to manage secret keys, so this can be public
 ├── overlays
 │   └── powerlevel10k \\ promt for Z-Shell (from mweinelt )
 │       ├── default.nix
