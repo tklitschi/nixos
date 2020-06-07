@@ -4,11 +4,20 @@
   security.acme.email = "t.kratz@posteo.de";
   security.acme.certs = {
     "litschi.xyz" = {
-      email = "t.kratz@posteo.de";
+      group = "matrix-synapse";
+      allowKeysForGroup = true;
+      extraDomains = {
+        "matrix.litschi.xyz" = null;
+      };
+      postRun = "systemctl reload nginx.service; systemctl restart matrix-synapse.service";
     };
+
     "matrix.litschi.xyz" = {
       group = "matrix-synapse";
       allowKeysForGroup = true;
+      extraDomains = {
+        "litschi.xyz" = null;
+      };
       postRun = "systemctl reload nginx.service; systemctl restart matrix-synapse.service";
     };
   };
@@ -51,7 +60,6 @@
      "pad.litschi.xyz" = {
        forceSSL = true;
         enableACME = true;
-        #root = "/var/lib/litschi.xyz";
         locations."/" = {
           proxyPass = "http://116.203.127.46:9001";
 	      proxyWebsockets = true;
@@ -61,7 +69,6 @@
       "stats.litschi.xyz" = {
 	forceSSL = true;
         enableACME = true;
-        #root = "/var/lib/litschi.xyz";
         locations."/" = {
           proxyPass = "http://localhost:3000";
 	  proxyWebsockets = true;
@@ -71,19 +78,29 @@
       "matrix.litschi.xyz" = {
         forceSSL = true;
         enableACME = true;
-        locations."/" = {
-          proxyPass = "http://127.0.0.1:8008";
+        locations = {
+          "/.well-known/matrix/server" = {
+            extraConfig = ''
+              default_type application/json;
+              return 200 "{\"m.server\": \"litschi.xyz\"}";
+            '';
+          };
+          "/" = {
+            proxyPass = "http://127.0.0.1:8008";
+          };
         };
+
       }; 
      
      "litschi.xyz" = {
-	      addSSL = true;
+	addSSL = true;
         enableACME = true;
-        #root = "/var/lib/litschi.xyz";
-        
-        locations."/" = {
+        locations = {
+          "/" = {
+            proxyPass = "http://127.0.0.1:8008";
+          };
         };
-      };
-    };
+     };
   };
+};
 }
