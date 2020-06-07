@@ -2,8 +2,8 @@
 callPackage (fetchFromGitHub {
   owner = "andir";
   repo = "ate";
-  rev = "8ab3b3572d78e54dceeb273225d01f3d23f1fef7";
-  sha256 = "19l2f1fi3rjp34chvnyxymfzhsxbj3ry0nnxbmfgpqnhg7cksk1f";
+  rev = "49846b79606a3b69f3ca5c98d4776ef34a76dcf8";
+  sha256 = "0zcbqvks25sdhbi3v17s3mljcj523q51vd77bp2q4q3pbbr4frva";
 }) {
   config.ate = {
     options = {
