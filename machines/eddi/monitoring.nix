@@ -3,20 +3,20 @@
   services.prometheus = {
     enable = true;
     scrapeConfigs = [
-      {
-        job_name = "router.litschi.xyz";
-        scrape_interval = "10s";
-        static_configs = [
-          {
-            targets = [
-              "192.168.1.1:9100"
-            ];
-            labels = {
-              alias = "router.litschi.xyz";
-            };
-          }
-        ];
-      }
+      #{
+      #  job_name = "router.litschi.xyz";
+      #  scrape_interval = "10s";
+      #  static_configs = [
+      #    {
+      #      targets = [
+      #        "192.168.1.1:9100"
+      #      ];
+      #      labels = {
+      #        alias = "router.litschi.xyz";
+      #      };
+      #    }
+      #  ];
+      #}
       {
         job_name = "eddi.litschi.xyz";
         scrape_interval = "10s";
