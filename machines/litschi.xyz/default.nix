@@ -9,6 +9,7 @@ in {
       ./modules/pkgs.nix
       ./modules/nginx.nix
       ./modules/monitoring.nix
+      ./modules/matr.nix
       ../../roles/all.nix
       #../../modules/borgbackup.nix
       ../../roles/server.nix
@@ -33,8 +34,10 @@ in {
   programs.mtr.enable = true;
   programs.gnupg.agent = {
       enable = true;
-      enableSSHSupport = true;
+      #enableSSHSupport = true;
   };
+  services.openssh.passwordAuthentication = false;
+
 
   security.duosec.motd = true;
   nix.trustedUsers = [ "root" "tk" ];
@@ -44,8 +47,16 @@ in {
    #  useDHCP = true;
     hostName = "the-guide";
     firewall = {
-      allowedTCPPorts = [ 80 20917 19999 9100 9090 443 9987 6600 3389 1 8080 9001 3000 9090 9100 ];
-      allowedUDPPorts = [ 20917 9987 ];
+      allowedTCPPorts = [ 
+        # 20917 9001
+        # 6600 # MPD
+        # 9987 # Teamspeak 3  
+        22 #SSH
+        443 80 # HTTP/S
+        8448 # Matrix 
+      ];
+
+      #allowedUDPPorts = [ 20917 9987 ];
     };
   };
  
