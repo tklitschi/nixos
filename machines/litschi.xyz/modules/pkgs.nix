@@ -7,6 +7,7 @@ in {
   environment.systemPackages = with pkgs; [
     bash
     deluge
+    cryptsetup
     exiftool
     gotop
     magic-wormhole
@@ -50,6 +51,7 @@ in {
     php72-unit
     pkgs.wireguard-tools
     pfetch
+    pwgen
     ripgrep
     wget
     weechat
