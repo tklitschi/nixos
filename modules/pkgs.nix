@@ -138,7 +138,7 @@ in {
     wineWowPackages.full
     winetricks
     xfce.thunar
-    zoom-us
+    unstable.zoom-us
   ];
 
 }
