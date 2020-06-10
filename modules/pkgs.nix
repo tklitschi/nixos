@@ -7,7 +7,7 @@ in {
   environment.systemPackages = with pkgs; [
     pfetch
     arduino
-    alacritty
+    #alacritty
     bash
     betterlockscreen
     bitwarden
@@ -16,29 +16,28 @@ in {
     deluge
     dunst
     discord
-    dunst
-    enpass
+    #enpass
     evince
     exiftool
     filezilla
     firefox
     gnupg
-    gnome3.eog
+    #gnome3.eog
     gnome3.file-roller
     gnome3.gedit
     gnome3.nautilus
     gnome3.sushi
-    gnome3.gnome-tweaks
-    gnome3.gnome-calendar
-    gnomeExtensions.dash-to-panel
-    gnomeExtensions.dash-to-dock
+    #gnome3.gnome-tweaks
+    #gnome3.gnome-calendar
+    #gnomeExtensions.dash-to-panel
+    #gnomeExtensions.dash-to-dock
     gitAndTools.git
     gitAndTools.hub
     gotop
-    hexedit
-    inkscape
+    #hexedit
+    #inkscape
     i3status-rust
-    jetbrains.pycharm-community
+    #jetbrains.pycharm-community
     jetbrains.idea-community
     libreoffice
     magic-wormhole
@@ -62,7 +61,7 @@ in {
     scrot
     spotify
     steam
-    snapcast
+    #snapcast
     seafile-client
     signal-desktop
     thunderbird
@@ -134,12 +133,12 @@ in {
     aqemu
     qemu
     qemu_kvm
-    gnome3.gnome-tweaks
+    #gnome3.gnome-tweaks
     chromium
     qt5Full
     wineWowPackages.full
     winetricks
-    xfce.thunar
+    #xfce.thunar
     unstable.zoom-us
   ];
 
