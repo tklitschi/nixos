@@ -83,9 +83,7 @@
     })
   ];
   environment.systemPackages = with pkgs; [
-    gitAndTools.git
-    # development
-    gitAndTools.hub
+    libinput-gestures
     ate
   ];
 
