@@ -1,3 +1,6 @@
 [submodule "nix-secret"]
 	path = nix-secret
 	url = git@github.com:tklitschi/nix-secret.git
+[submodule "modules/cdark"]
+	path = modules/cdark
+	url = git@git.darmstadt.ccc.de:cdark.net/nixdark.git
