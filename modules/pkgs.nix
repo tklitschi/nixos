@@ -79,6 +79,7 @@ in {
     efibootmgr
     efitools
     efivar
+    fast-cli
     feh
     file
     fd
@@ -90,6 +91,7 @@ in {
     gawk
     gnumake
     htop
+    kitty
     lxappearance
     libnotify
     mtr
