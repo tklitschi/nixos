@@ -8,7 +8,7 @@
     ../modules/sshd.nix
     ../modules/yubikey.nix
     #../modules/borgbackup.nix
-    /etc/tinc/cdark.net/default.nix
+    ../modules/cdark/default.nix
     ../home
 
 
@@ -48,8 +48,7 @@
       xkbOptions = "compose:caps";
       libinput.enable = true;
       videoDrivers = [ "intel" ]; # intel
-
-      desktopManager.gnome3.enable = true;
+      #desktopManager.gnome3.enable = true;
       desktopManager.xterm.enable = false;
       displayManager.gdm = {
         enable = true;
