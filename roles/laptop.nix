@@ -27,7 +27,7 @@
   nix.trustedUsers = [ "root" "tk" ];
 
   hardware.cpu.intel.updateMicrocode = true;
-
+  services.upower.enable = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
   networking.networkmanager = {
     enable = true;
