@@ -19,7 +19,7 @@
     autosuggestions.enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
-    loginShellInit = "cat /etc/motd";
+    loginShellInit = "pfetch";
    
     ohMyZsh = {
       enable = true;
