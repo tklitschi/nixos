@@ -100,7 +100,26 @@
             proxyPass = "http://127.0.0.1:8008";
           };
         };
-     };
+    };
+    "praesenzleere.com" = {
+	forceSSL = true;
+        enableACME = true;
+        locations = {
+          "/" = {
+           root = "/var/www/leere";
+          };
+        };
+    };
+    "www.praesenzleere.com" = {
+	forceSSL = true;
+        enableACME = true;
+        locations = {
+          "/" = {
+           root = "/var/www/leere";
+          };
+        };
+    };
+
   };
 };
 }
