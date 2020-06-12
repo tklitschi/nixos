@@ -66,7 +66,7 @@ in {
     signal-desktop
     thunderbird
     unstable.teamspeak_client
-    tor-browser-bundle-bin
+    #tor-browser-bundle-bin
     transmission-gtk
     vscode
     wireshark
@@ -98,7 +98,7 @@ in {
     ncat
     nordic
     nordic-polar
-    unstable.nextcloud-client
+    #unstable.nextcloud-client
     openssl
     pavucontrol
     prusa-slicer
