@@ -18,8 +18,8 @@
         hostName = "litschi_zaphod";
         hostsDirectory = /etc/tinc/cdark.net/hosts;
         ed25519PrivateKeyFile = "/etc/tinc/cdark.net/ed25519_key.priv"; 
-        ip4address = "172.20.71.7";
-        ip6address = "fd23:42:cda:2000::0003";
+        ip4address = "172.20.71.8";
+        ip6address = "fd23:42:cda:2000::0006";
       };
     }
   ];
