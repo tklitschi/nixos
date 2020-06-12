@@ -1,9 +1,7 @@
 { config, lib, pkgs, ... }:
 {
   users.users.root = {
-    shell = pkgs.zsh;
-
-openssh.authorizedKeys.keys = [
-    ];
+    #shell = pkgs.zsh;
+    openssh.authorizedKeys.keys = [ ];
   };
 }
