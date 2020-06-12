@@ -48,7 +48,7 @@
       xkbOptions = "compose:caps";
       libinput.enable = true;
       videoDrivers = [ "intel" ]; # intel
-      #desktopManager.gnome3.enable = true;
+      desktopManager.gnome3.enable = true;
       desktopManager.xterm.enable = false;
       displayManager.gdm = {
         enable = true;
