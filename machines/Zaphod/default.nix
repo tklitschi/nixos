@@ -46,12 +46,6 @@ in {
     enableCryptodisk = true;
   };
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
-  boot.initrd.luks.devices = {
-      root = { 
-      device = "/dev/disk/by-uuid/426d50ec-e343-4ba6-ae21-4bcd4c82b872";
-      preLVM = true;
-      };
-  };
 
   nixpkgs.config.allowUnfree = true;
 
@@ -59,7 +53,7 @@ in {
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
   # should.
-  system.stateVersion = "19.09"; # Did you read the comment?
+  system.stateVersion = "20.03"; # Did you read the comment? # Yeah, I reinstalled NixOS
 
   environment.systemPackages = with pkgs; [
     virtmanager
