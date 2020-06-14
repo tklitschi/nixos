@@ -140,6 +140,10 @@ in {
     winetricks
     #xfce.thunar
     unstable.zoom-us
+    php74
+    php74-embed
+    php74-unit
+    brightnessctl
   ];
 
 }
