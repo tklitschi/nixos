@@ -52,8 +52,6 @@
       desktopManager.xterm.enable = false;
       displayManager.gdm = {
         enable = true;
-        autoLogin.user = "tk";
-        autoLogin.enable = true;
       };
 
       windowManager.i3 = {
