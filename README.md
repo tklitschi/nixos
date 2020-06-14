@@ -13,10 +13,9 @@ To run my NixOS config, execute the following:
 
 ## TODO:
 
-    - [ ] change commands and links to varibales
-    - [ ] insert https://github.com/tklitschi/nixdot to NixOS Config
+    - [ ] change commands and links to absolute paths
     - [ ] Ricing all the Time
-    - [ ] Home-manager
+    - [X] Home-manager
 
 ## dotfiles
 You can find the config files for e.g. i3 in my nixdot rep (https://github.com/tklitschi/nixdot).
