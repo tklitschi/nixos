@@ -1,7 +1,5 @@
 { pkgs, lib, config, ... }:
 {
-  home.keyboard.layout = "de";
-
   xsession = {
     enable = true;
     windowManager.i3 = {
@@ -11,7 +9,7 @@
       config = {
         bars = [ 
           { 
-            statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs /etc/nixos/home/nixdot/.config/i3status-rust/${(import /etc/nixos/hostname.nix).hostName}.toml"; #${config.networking.hostName}${.i3status-rs-config} #/etc/nixos/home/nixdot/.config/i3status-rust/${networking.hostName}.toml
+            statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs /etc/nixos/home/nixdot/.config/i3status-rust/${(import /etc/nixos/hostname.nix).hostName}.toml";
             fonts = [ "JetBrainsMono Nerd Font 8" ]; 
             colors = {
               separator = "#666666";
@@ -135,7 +133,7 @@
         };
         startup = [
           {command = "mpDris2";}
-          {command = "feh --bg-fill /etc/nixos/home/nixdot/.config/wallpaper.png"; always = true;}
+          {command = "${pkgs.feh}/bin/feh --bg-fill /etc/nixos/home/nixdot/.config/wallpaper.png"; always = true;}
         ];
         terminal = "kitty";
         modifier = "Mod4";
