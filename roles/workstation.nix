@@ -83,6 +83,13 @@
 
     autorandr.enable = true;
   };
+  services.compton.enable = true;
+  services.picom = {
+    enable = true;
+    backend = "glx";
+    vSync = "opengl";
+    shadow = true;
+  };
   
   nixpkgs.config = {
   packageOverrides = pkgs: rec {
