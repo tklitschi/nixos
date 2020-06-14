@@ -140,6 +140,7 @@ in {
     winetricks
     #xfce.thunar
     unstable.zoom-us
+    ponymix
   ];
 
 }
