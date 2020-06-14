@@ -141,6 +141,10 @@ in {
     #xfce.thunar
     unstable.zoom-us
     ponymix
+    php74
+    php74-embed
+    php74-unit
+    brightnessctl
   ];
 
 }

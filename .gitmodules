@@ -4,3 +4,6 @@
 [submodule "modules/cdark"]
 	path = modules/cdark
 	url = git@git.darmstadt.ccc.de:cdark.net/nixdark.git
+[submodule "home/nixdot"]
+	path = home/nixdot
+	url = git@github.com:tklitschi/nixdot.git
