@@ -44,7 +44,7 @@
           "${mod}+i" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/i3keybindingsmenu.sh";
           "${mod}+o" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/powermenu.sh";
           "${mod}+Shift+s" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/scrotmenu.sh";
-          "${mod}+Shift+m" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/mpdmenu.sh";
+          "${mod}+Shift+a" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/mpdmenu.sh";
           "${mod}+c" = "exec ${pkgs.chromium}/bin/chromium";
           "${mod}+n" = "exec ${pkgs.gnome3.nautilus}/bin/nautilus";
           "${mod}+p" = "exec ${pkgs.betterlockscreen}/bin/betterlockscreen --lock";
