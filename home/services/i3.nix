@@ -9,7 +9,7 @@
       config = {
         bars = [ 
           { 
-            statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs /etc/nixos/home/nixdot/.config/i3status-rust/${(import /etc/nixos/hostname.nix).hostName}.toml";
+            statusCommand = "${pkgs.i3status-rust}/bin/i3status-rs /etc/nixos/home/dotfiles/i3status-rust/${(import /etc/nixos/hostname.nix).hostName}.toml";
             fonts = [ "JetBrainsMono Nerd Font 8" ]; 
             colors = {
               separator = "#666666";
@@ -40,11 +40,11 @@
         keybindings = let mod = config.xsession.windowManager.i3.config.modifier; in lib.mkOptionDefault {
           "${mod}+Return" = "exec kitty";
           "${mod}+q" = "kill";
-          "${mod}+d" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/appsmenu.sh";
-          "${mod}+i" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/i3keybindingsmenu.sh";
-          "${mod}+o" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/powermenu.sh";
-          "${mod}+Shift+s" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/scrotmenu.sh";
-          "${mod}+Shift+a" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/nixdot/.config/rofi-menus/mpdmenu.sh";
+          "${mod}+d" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/dotfiles/rofi-menus/appsmenu.sh";
+          "${mod}+i" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/dotfiles/rofi-menus/i3keybindingsmenu.sh";
+          "${mod}+o" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/dotfiles/rofi-menus/powermenu.sh";
+          "${mod}+Shift+s" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/dotfiles/rofi-menus/scrotmenu.sh";
+          "${mod}+Shift+a" = "exec ${pkgs.bash}/bin/bash /etc/nixos/home/dotfiles/rofi-menus/mpdmenu.sh";
           "${mod}+c" = "exec ${pkgs.chromium}/bin/chromium";
           "${mod}+n" = "exec ${pkgs.gnome3.nautilus}/bin/nautilus";
           "${mod}+p" = "exec ${pkgs.betterlockscreen}/bin/betterlockscreen --lock";
@@ -133,7 +133,7 @@
         };
         startup = [
           {command = "mpDris2";}
-          {command = "${pkgs.feh}/bin/feh --bg-fill /etc/nixos/home/nixdot/.config/wallpaper.png"; always = true;}
+          {command = "${pkgs.feh}/bin/feh --bg-fill /etc/nixos/home/dotfiles/wallpaper.png"; always = true;}
         ];
         terminal = "kitty";
         modifier = "Mod4";
