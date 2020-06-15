@@ -20,18 +20,19 @@ To run my NixOS config, execute the following:
 ## dotfiles
 You can find the config files for e.g. i3 in my nixdot rep (https://github.com/tklitschi/nixdot).
 
-## Structure
+## Structure (updated not frequently
 ```
 .
-├── home        \\ Here you can find some of my attemps of to wirte some home-manager config, but mostly not used
-│   ├── default.nix 
+├── home        \\ Home-Manager config
+│   ├── default.nix \\ default + gtk config
+│   ├── nixdot \\ submodule to tklitschi/nixdot config repo. May be updated in future 
 │   ├── programs
-│   │   ├── ssh.nix \\ currently not included
+│   │   ├── ssh.nix \\ small ssh config
 │   │   ├── vim.nix  \\ vim Config for User tk
-│   │   └── zsh.nix \\ currently not included
+│   │   └── kitty.nix \\ kitty terminal config
 │   └── services
-│       ├── i3.nix \\ currently not included
-│       └── mpd.nix \\ currently not included
+│       ├── i3.nix \\ fancy i3 config
+│       └── dunst.nix \\ dunst notification config
 ├── machines
 │   ├── eddi \\ Desktop Computer and kinda Homeserver   
 │   │   ├── default.nix
