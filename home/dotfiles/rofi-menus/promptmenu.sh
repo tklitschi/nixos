@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rofi_command="rofi -theme /etc/nixos/home/nixdot/.config/rofi-menus/themes/promptmenu.rasi"
+rofi_command="rofi -theme /etc/nixos/home/dotfiles/rofi-menus/themes/promptmenu.rasi"
 
 ### Options ###
 yes_text="Confirm"

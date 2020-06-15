@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rofi_command="rofi -theme /etc/nixos/home/nixdot/.config/rofi-menus/themes/scrotmenu.rasi"
+rofi_command="rofi -theme /etc/nixos/home/dotfiles/rofi-menus/themes/scrotmenu.rasi"
 
 ### Options ###
 screen=""

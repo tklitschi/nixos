@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rofi_command="rofi -theme /etc/nixos/home/nixdot/.config/rofi-menus/themes/mpdmenu.rasi"
+rofi_command="rofi -theme /etc/nixos/home/dotfiles/rofi-menus/themes/mpdmenu.rasi"
 
 ### Options ###
 # Gets the current status of mpd (for us to parse it later on)

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rofi_command="rofi -theme /etc/nixos/home/nixdot/.config/rofi-menus/themes/powermenu.rasi"
+rofi_command="rofi -theme /etc/nixos/home/dotfiles/rofi-menus/themes/powermenu.rasi"
 
 ### Options ###
 power_off=""
