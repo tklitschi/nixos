@@ -1,7 +1,6 @@
 {pkgs, ...}:
 {
     imports = [
-        ../modules/zsh.nix
         ../modules/tmux.nix
         ../users/root.nix
         #../modules/dns.nix
