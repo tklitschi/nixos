@@ -13,6 +13,7 @@
       ./programs/ssh.nix
       ./programs/vim.nix
       ./programs/kitty.nix
+      ./programs/zsh.nix
 
       ./services/i3.nix
       ./services/dunst.nix 
