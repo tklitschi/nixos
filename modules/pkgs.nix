@@ -86,6 +86,8 @@ in {
     gitAndTools.gitFull
     gitAndTools.tig
     gitAndTools.transcrypt
+    gitAndTools.gitstatus
+    zsh-powerlevel10k
     gcc
     gawk
     gnumake
@@ -145,6 +147,8 @@ in {
     php74-embed
     php74-unit
     brightnessctl
+    exa
+
   ];
 
 }
