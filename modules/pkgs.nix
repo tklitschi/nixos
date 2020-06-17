@@ -148,6 +148,7 @@ in {
     php74-unit
     brightnessctl
     exa
+    google-drive-ocamlfuse
 
   ];
 
