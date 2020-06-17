@@ -4,6 +4,14 @@
     <home-manager/nixos>
   ];
 
+  programs.zsh = {
+    enable = true;
+    syntaxHighlighting = {
+      enable = true;
+      highlighters = [ "main" "brackets" "pattern" "cursor" "root" "line" ]; 
+    };
+  };
+
   home-manager.useGlobalPkgs = true;
   home-manager.users.tk = { ... }: {
     services.blueman-applet.enable = true;
