@@ -2,8 +2,15 @@
 {
     programs.fzf = {
         enable = true;
-        enableZshIntegration = true;
     };
+    programs.keychain = {
+        enable = true;
+        keys = [ "id_rsa" "id_ed25519" ];
+    };
+    programs.pazi = {
+        enable = true;
+    };
+
     programs.zsh = {
         enable = true;
         enableCompletion = true;
@@ -20,7 +27,7 @@
         
         oh-my-zsh = {
             enable = true;
-            plugins = [ "git" "sudo" "colored-man-pages" ];
+            plugins = [ "git" "sudo" "colored-man-pages" "colorize" ];
         };
 
         initExtra = ''
