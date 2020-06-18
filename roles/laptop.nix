@@ -10,6 +10,7 @@
     #../modules/borgbackup.nix
     ../modules/cdark/default.nix
     ../home
+    ../overlays
 
 
     {
@@ -74,14 +75,8 @@
 
   services.gvfs.enable = true;
 
-  nixpkgs.overlays = [
-    (self: super: {
-        ate = self.callPackage ../modules/ate.nix {};
-    })
-  ];
   environment.systemPackages = with pkgs; [
     libinput-gestures
-    ate
   ];
 
   services.prometheus.exporters = {
