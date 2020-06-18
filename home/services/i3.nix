@@ -50,7 +50,7 @@
           "${mod}+p" = "exec ${pkgs.betterlockscreen}/bin/betterlockscreen --lock";
           "${mod}+g" = "gaps inner current plus 5";
           "${mod}+Shift+g" = "gaps inner current minus 5";
-          # "${mod}+" = "exec ";
+          "${mod}+m" = "exec kill -s USR1 $(pidof deadd-notification-center)";
           # "${mod}+" = "exec ";
           # "${mod}+" = "exec ";
           # "${mod}+" = "exec ";
@@ -133,6 +133,7 @@
         };
         startup = [
           {command = "mpDris2";}
+          {command = "deadd-notification-center";}
           {command = "${pkgs.feh}/bin/feh --bg-fill /etc/nixos/home/dotfiles/wallpaper.png"; always = true;}
         ];
         terminal = "kitty";

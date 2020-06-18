@@ -14,7 +14,7 @@ in {
     blueman
     cryptsetup
     deluge
-    dunst
+    #dunst
     discord
     #enpass
     evince

@@ -24,7 +24,7 @@
       ./programs/zsh.nix
 
       ./services/i3.nix
-      ./services/dunst.nix 
+      #./services/dunst.nix 
     ];
 
     gtk = {

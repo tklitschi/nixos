@@ -8,12 +8,13 @@
     ../modules/yubikey.nix
     ../modules/tftpd.nix
     ../modules/sshd.nix
+    ../modules/mpd.nix
+    ../modules/rdp.nix
     #../modules/borgbackup.nix
     /etc/tinc/cdark.net/default.nix
     #../modules/prometheus.nix
     ../home
-    ../modules/mpd.nix
-    ../modules/rdp.nix
+    ../overlays
 
 
     {
@@ -101,16 +102,10 @@
 
   services.gvfs.enable = true;
 
-  nixpkgs.overlays = [
-    (self: super: {
-        ate = self.callPackage ../modules/ate.nix {};
-    })
-  ];
   environment.systemPackages = with pkgs; [
     gitAndTools.git
     # development
     gitAndTools.hub
-    ate
   ];
 
   networking.firewall = {
