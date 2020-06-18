@@ -11,17 +11,11 @@ block = "net"
 ssid = true
 ip = true
 device = "enp0s31f6"
-speed_up = true 
-speed_down = true 
+speed_up = false
+speed_down = false 
 
 [[block]]
 block = "music"
-player = "mpd"
-buttons = ["play", "next"]
-
-[[block]]
-block = "music"
-player = "spotify"
 buttons = ["play", "next"]
 
 [[block]]
